@@ -523,6 +523,73 @@ body {
   color: #AA0601;
 }
 
+.joint {
+  background-image: url("/images/home-section4-bg.png");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+.joint .title {
+  color: white;
+  margin-bottom: 48px;
+}
+@media (max-width: 767px) {
+  .joint .title {
+    margin-bottom: 24px;
+  }
+}
+.joint .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 24px;
+}
+.joint .item {
+  width: 50%;
+}
+@media (max-width: 992px) {
+  .joint .item {
+    width: 100%;
+  }
+}
+.joint .item:hover .item-img {
+  opacity: 0.8;
+}
+.joint .item .item-img {
+  height: 240px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.joint .item .img1 {
+  -o-object-position: 50% 23%;
+     object-position: 50% 23%;
+}
+@media (max-width: 767px) {
+  .joint .item .img1 {
+    -o-object-position: center top;
+       object-position: center top;
+  }
+}
+.joint .item-title {
+  font-size: 48px;
+  font-weight: 900;
+  font-style: italic;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #AA0601;
+  background: white;
+}
+.joint .item .border-right {
+  border-right: 1px solid #FBF2F2;
+}
+
 .mb-1 {
   margin-bottom: 4px;
 }
