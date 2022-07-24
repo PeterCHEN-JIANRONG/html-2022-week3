@@ -1,0 +1,39 @@
+.banner {
+  background-image: url("/images/home-header.png");
+  background-size: cover;
+  background-position: center;
+  color: $primary-dark;
+
+  @media(max-width: 992px){
+    background-image: url("/images/home-header-sm.png");
+  }
+
+  .container {
+    text-align: right;
+    padding-top: 296px;
+    padding-bottom: 296px;
+
+    @media(max-width: 767px){
+      padding-top: 144px;
+      padding-bottom: 144px;
+    }
+  }
+
+  .title {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 8px;
+
+    @media(max-width: 767px){
+      font-size: 24px;
+    }
+  }
+  
+  .subtitle {
+    font-size: 36px;
+
+    @media(max-width: 767px){
+      font-size: 16px;
+    }
+  }
+}

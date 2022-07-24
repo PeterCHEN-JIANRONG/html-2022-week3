@@ -1,12 +1,14 @@
 @import './config/reset';
+@import './config/variables'; // 自定變數
 @import './config/base';
 
 @import './layout/header';
 @import './layout/footer';
+
+@import './component/btn';
 
 @import './page/index';
 
 @import './utilities/spacing';
 @import './utilities/size';
 @import './utilities/text';
-

@@ -1,5 +1,5 @@
 .header {
-  background: #AA0601;
+  background: $primary;
 
   .container {
     @media(max-width: 767px){
@@ -43,7 +43,7 @@
         color: white;
         padding: 25px 32px;
         &:hover {
-          background-color: #ca130d;
+          background-color: $primary-light;
         }
 
         @media(max-width: 767px){
