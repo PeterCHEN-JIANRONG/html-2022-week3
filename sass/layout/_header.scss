@@ -1,3 +1,57 @@
 .header {
+  background: #AA0601;
 
+  .container {
+    @media(max-width: 767px){
+      padding: 0;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media(max-width: 767px){
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .logo-link {
+      max-width: 80px;
+      @media(max-width: 767px){
+        padding: 12px 0;
+      }
+    }
+  
+    .navbar {
+      display: flex;
+      @media(max-width: 767px){
+        width: 100%;
+        flex-wrap: wrap;
+      }
+      
+      .nav-item {
+        @media(max-width: 767px){
+          width: 50%;
+        }
+      }
+      .nav-link {
+        font-size: 20px;
+        display: block;
+        color: white;
+        padding: 25px 32px;
+        &:hover {
+          background-color: #ca130d;
+        }
+
+        @media(max-width: 767px){
+          border: 1px solid white;
+          text-align: center;
+          padding: 12px 0;
+        }
+      }
+    }
+  }
 }
