@@ -1,4 +1,128 @@
 
 .footer {
+  background: $primary;
 
+  .link {
+    color: white;
+    transition: all 0.2s;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+  
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 24px;
+    padding-top: 48px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid white;
+
+    @media(max-width: 767px){
+      align-items: flex-start;
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+  }
+
+  .nav {
+    display: flex;
+    gap: 48px;
+
+    @media(max-width: 767px){
+      display: none;
+    }
+  }
+
+  .community {
+    display: flex;
+    gap: 32px;
+
+    @media(max-width: 992px){
+      gap: 16px;
+    }
+    @media(max-width: 767px){
+      gap: 8px;
+    }
+
+    .item {
+      max-width: 48px;
+      @media(max-width: 767px){
+        max-width: 24px;
+      }
+    }
+  }
+
+  .contact-list {
+    width: 100%;
+
+    @media(max-width: 767px){
+      width: auto;
+      order: -1;
+    }
+
+    .item {
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      &:not(:last-child){
+        margin-bottom: 8px;
+      }
+    }
+    .link {
+      font-size: 36px;
+      @media(max-width: 767px){
+        font-size: 16px;
+      }
+    }
+
+    .icon {
+      font-size: 48px !important;
+      @media(max-width: 767px){
+        font-size: 24px !important;
+      }
+    }
+  }
+
+  &__footer {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    @media(max-width: 767px){
+      row-gap: 8px;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding-top: 16px;
+      padding-bottom: 24px;
+    }
+
+    .list {
+      display: flex;
+      align-items: center;
+      gap: 48px;
+
+      @media(max-width: 767px){
+        row-gap: 8px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+
+      .link {
+        font-size: 14px;
+        @media(max-width: 767px){
+          font-size: 16px;
+        }
+      }
+    }
+  }
 }

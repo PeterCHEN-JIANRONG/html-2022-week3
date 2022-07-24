@@ -1,4 +1,6 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
@@ -13,32 +15,27 @@ a {
 }
 
 body {
-	font-size: 16px;
-	line-height: 1.5;
+  font-size: 16px;
+  line-height: 1.5;
   font-weight: 400;
-  font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+  font-family: "Roboto", "Noto Sans TC", sans-serif;
 }
 
 .container {
   max-width: 1296px;
   margin: 0 auto;
 
-  @media(max-width: 992px){
+  @media (max-width: 992px) {
     max-width: 696px;
   }
 
-  @media(max-width: 767px){
+  @media (max-width: 767px) {
     max-width: 100%;
     padding-left: 12px;
     padding-right: 12px;
   }
 }
 
-// material icon
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
