@@ -238,18 +238,20 @@ body {
     font-size: 24px;
   }
 }
-
-.service {
-  background-color: #FBF2F2;
+.service .container, .classic .container, .joint .container, .recommend .container, .contact .container {
   padding-top: 80px;
   padding-bottom: 80px;
-  text-align: center;
 }
 @media (max-width: 767px) {
-  .service {
+  .service .container, .classic .container, .joint .container, .recommend .container, .contact .container {
     padding-top: 40px;
     padding-bottom: 40px;
   }
+}
+
+.service {
+  background-color: #FBF2F2;
+  text-align: center;
 }
 .service .title {
   margin-bottom: 24px;
@@ -291,6 +293,56 @@ body {
 .service .service-text {
   -moz-text-align-last: left;
        text-align-last: left;
+}
+
+.classic {
+  text-align: center;
+}
+.classic .title {
+  margin-bottom: 48px;
+}
+@media (max-width: 767px) {
+  .classic .title {
+    margin-bottom: 24px;
+  }
+}
+.classic .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  row-gap: 24px;
+}
+.classic .list .item {
+  width: 32%;
+}
+@media (max-width: 992px) {
+  .classic .list .item {
+    width: 100%;
+  }
+}
+.classic .list .item-img {
+  margin-bottom: 8px;
+}
+@media (max-width: 992px) {
+  .classic .list .item-img {
+    max-width: 336px;
+  }
+}
+@media (max-width: 767px) {
+  .classic .list .item-img {
+    max-width: 100%;
+  }
+}
+.classic .list .item-title {
+  font-size: 48px;
+  font-weight: 900;
+  font-style: italic;
+  color: #AA0601;
 }
 
 .mb-1 {
