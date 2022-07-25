@@ -153,7 +153,35 @@
         </div>
       </section>
       <section class="contact">
-        <h2 class="title">聯絡我們</h2>
+        <div class="container-sm">
+          <h2 class="title">聯絡我們</h2>
+          <p class="text">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
+          <form class="form" action="#" method="post">
+            <div class="mb-3">
+              <label for="name" class="d-block mb-2">姓名</label>
+              <input class="text-input" type="text" name="name" id="name" placeholder="陳小明">
+            </div>
+            <div class="mb-3">
+              <label for="tel" class="d-block mb-2">聯絡電話</label>
+              <input class="text-input" type="tel" name="tel" id="tel" placeholder="0912-345-678">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="d-block mb-2">電子郵件</label>
+              <input class="text-input" type="email" name="email" id="email" placeholder="example@email.com">
+            </div>
+            <div class="mb-3">
+              <label for="opinion" class="d-block mb-2">意見反應</label>
+              <textarea class="text-input textarea" name="opinion" id="opinion" cols="30" rows="6" placeholder="請輸入您的意見"></textarea>
+            </div>
+            <div class="agree-wrap">
+              <input class="me-2" type="checkbox" name="agree" id="agree">
+              <label for="agree" class="">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+            </div>
+            <div class="text-center">
+              <button type="button" class="submit">確認送出</button>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="footer">

@@ -50,7 +50,7 @@
     }
   }
 
-  .container {
+  .container,.container-sm {
     padding-top: 80px;
     padding-bottom: 80px;
 
@@ -281,6 +281,83 @@
     &-small {
       font-size: 14px;
       color: #707070;
+    }
+  }
+}
+
+.contact {
+  background: $light;
+
+  .title {
+    text-align: center;
+    margin-bottom: 48px;
+    @media(max-width: 992px){
+      margin-bottom: 24px;
+    }
+  }
+
+  .text {
+    font-size: 20px;
+    margin-bottom: 24px;
+
+    @media(max-width: 992px){
+      font-size: 16px;
+    }
+  }
+  
+  .form {
+
+    .text-input {
+      width: 100%;
+      padding: 6px 12px;
+      background: transparent;
+      border: 1px solid #000;
+      &:focus-visible {
+        outline-color: $primary;
+      }
+      &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #000;
+        opacity: 0.4;
+      }
+    }
+
+    .textarea {
+      resize: none;
+    }
+
+    .agree-wrap {
+      display: flex;
+      align-items: center;
+      margin-bottom: 48px;
+      
+      @media(max-width: 767px){
+        align-items: flex-start;
+      }
+    }
+
+    .submit {
+      color: white;
+      background: $primary;
+      border: none;
+      cursor: pointer;
+      padding: 16px 176px;
+
+      @media(max-width: 992px){
+        padding: 16px 136px;
+      }
+
+      @media(max-width: 767px){
+        width: 100%;
+        padding: 16px 0;
+      }
+
+      &:hover,&:focus {
+        background: lighten($primary, 5%)
+      }
+
+      &:active {
+        background: lighten($primary, 15%)
+      }
     }
   }
 }
