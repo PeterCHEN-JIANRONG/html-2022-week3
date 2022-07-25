@@ -1,11 +1,11 @@
 .banner {
-  background-image: url("/images/home-header.png");
+  background-image: url("https://github.com/PeterCHEN-JIANRONG/html-2022-week3/blob/main/images/home-header.png?raw=true");
   background-size: cover;
   background-position: center;
   color: $primary-dark;
 
   @media(max-width: 992px){
-    background-image: url("/images/home-header-sm.png");
+    background-image: url("https://github.com/PeterCHEN-JIANRONG/html-2022-week3/blob/main/images/home-header-sm.png?raw=true");
   }
 
   .container {
@@ -150,7 +150,7 @@
 
 
 .joint {
-  background-image: url("/images/home-section4-bg.png");
+  background-image: url("https://github.com/PeterCHEN-JIANRONG/html-2022-week3/blob/main/images/home-section4-bg.png?raw=true");
   background-size: cover;
   background-position: center;
   text-align: center;

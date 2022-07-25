@@ -383,14 +383,14 @@ body {
 }
 
 .banner {
-  background-image: url("/images/home-header.png");
+  background-image: url("https://github.com/PeterCHEN-JIANRONG/html-2022-week3/blob/main/images/home-header.png?raw=true");
   background-size: cover;
   background-position: center;
   color: #650300;
 }
 @media (max-width: 992px) {
   .banner {
-    background-image: url("/images/home-header-sm.png");
+    background-image: url("https://github.com/PeterCHEN-JIANRONG/html-2022-week3/blob/main/images/home-header-sm.png?raw=true");
   }
 }
 .banner .container {
@@ -541,7 +541,7 @@ body {
 }
 
 .joint {
-  background-image: url("/images/home-section4-bg.png");
+  background-image: url("https://github.com/PeterCHEN-JIANRONG/html-2022-week3/blob/main/images/home-section4-bg.png?raw=true");
   background-size: cover;
   background-position: center;
   text-align: center;
