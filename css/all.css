@@ -77,19 +77,18 @@ body {
 }
 
 .container {
-  max-width: 1296px;
+  max-width: 1320px;
+  padding: 0 12px;
   margin: 0 auto;
 }
 @media (max-width: 992px) {
   .container {
-    max-width: 696px;
+    max-width: 720px;
   }
 }
 @media (max-width: 767px) {
   .container {
     max-width: 100%;
-    padding-left: 12px;
-    padding-right: 12px;
   }
 }
 
@@ -383,26 +382,34 @@ body {
 }
 
 .banner {
-  background-image: url("https://github.com/PeterCHEN-JIANRONG/html-2022-week3/blob/main/images/home-header.png?raw=true");
+  height: calc(100vh - 80px);
+  background-image: url("../images/home-header.png");
   background-size: cover;
   background-position: center;
   color: #650300;
 }
 @media (max-width: 992px) {
   .banner {
-    background-image: url("https://github.com/PeterCHEN-JIANRONG/html-2022-week3/blob/main/images/home-header-sm.png?raw=true");
+    background-image: url("../images/home-header-sm.png");
+  }
+}
+@media (max-width: 767px) {
+  .banner {
+    height: 396px;
   }
 }
 .banner .container {
+  height: 100%;
   text-align: right;
-  padding-top: 296px;
-  padding-bottom: 296px;
-}
-@media (max-width: 767px) {
-  .banner .container {
-    padding-top: 144px;
-    padding-bottom: 144px;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .banner .title {
   font-size: 64px;
@@ -541,7 +548,7 @@ body {
 }
 
 .joint {
-  background-image: url("https://github.com/PeterCHEN-JIANRONG/html-2022-week3/blob/main/images/home-section4-bg.png?raw=true");
+  background-image: url("../images/home-section4-bg.png");
   background-size: cover;
   background-position: center;
   text-align: center;

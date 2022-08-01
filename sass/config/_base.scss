@@ -22,17 +22,16 @@ body {
 }
 
 .container {
-  max-width: 1296px;
+  max-width: 1320px; //　1920 - 312*2 + 12*2 = 1320
+  padding: 0 12px; // 左右兩邊 padding
   margin: 0 auto;
 
   @media (max-width: 992px) {
-    max-width: 696px;
+    max-width: 720px; // 768 - 36*2 + 12*2 = 720
   }
 
   @media (max-width: 767px) {
     max-width: 100%;
-    padding-left: 12px;
-    padding-right: 12px;
   }
 }
 
